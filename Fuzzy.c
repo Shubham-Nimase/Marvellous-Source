@@ -1,3 +1,4 @@
+_CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<math.h>
 float set1[2][20], set2[2][20], set3[2][20], set4[2][20], result[10][10];
@@ -6,7 +7,7 @@ void main()
 {
 
 	printf("Enter the size of sets\t");
-	scanf_s("%d", &n);
+	scanf("%d", &n);
 	accept(set1);
 	display(set1);
 	accept(set2);
@@ -33,9 +34,9 @@ void accept(float m[2][20])
 	for (i = 0; i < n; i++)
 	{
 		printf("Numerator\t");
-		scanf_s("%f", &m[0][i]);
+		scanf("%f", &m[0][i]);
 		printf("Denominator\t");
-		scanf_s("%f", &m[1][i]);
+		scanf("%f", &m[1][i]);
 	}
 }
 
@@ -129,4 +130,5 @@ void cart_product(float set1[2][20], float set2[2][20])
 	}
 	printf("\n");
 }
+
 
