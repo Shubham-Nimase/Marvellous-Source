@@ -1,38 +1,8 @@
 #include<stdio.h>
-int SerchLastOccurance(char* str, char ch)
+void main()
 {
-	int *iStart, *iEnd, 
-	char *Temp = 0;
+	int i = 4, b = 5;
+	b = i++;
+	printf("%d,%d,%d,%d", ++b, i++, --i, b--);
 
-	while (*str != '\0')
-	{
-		iEnd++;
-	}
-	iEnd--;
-
-	while (*iStart < *iEnd)          //unchecked programm
-	{
-		*Temp = *iStart;
-		*iStart = *iEnd;
-		*iEnd = *Temp;
-
-		iStart++;
-		iEnd--;
-
-	}
 }
-
-int main()
-{
-	char arr[50];
-	char ch = '\0';
-	int iRet = 0;
-
-	printf("Enter your String:");
-	scanf_s("%[^'\n']s", arr,sizeof(arr));
-
-	printf("Enter any Character:");
-	scanf_s(" %c", &ch);
-
-	iRet = SerchLastOccurance(arr, ch);
-

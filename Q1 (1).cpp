@@ -7,7 +7,7 @@ void Pattern(int iNo1,int iNo2)
 	{
 		for(icol=1;icol<=iNo2;icol++)
 		{
-			printf("%d\t",icol);
+			printf("*\t");
 		}
 		printf("\n");
 	}

@@ -1,13 +1,16 @@
 #include<stdio.h>
-void Pattern(int iNo1,int iNo2)
+void Pattern(int iNo1, int iNo2)
 {
 	int irow=0;
 	int icol=0;
+	int icount=0;
 	for(irow=1;irow<=iNo1;irow++)
 	{
 		for(icol=1;icol<=iNo2;icol++)
 		{
-			printf("%d\t",icol);
+			printf("%d\t",icount=icount+1);
+			
+
 		}
 		printf("\n");
 	}

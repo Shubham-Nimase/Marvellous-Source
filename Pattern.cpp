@@ -1,26 +1,43 @@
-/*
-problem statement: display 1 * 2 * 3 * 4 * 
-*/
 #include<stdio.h>
-void Pattern(int iNo)
-{
-	for (int iCnt = 1; iCnt <= iNo; iCnt++)
-	{
-		printf("%d\t*\t", iCnt);
 
+int Pattern(int iNo1, int iNo2)
+
+{
+	int iRow = 0;
+	int iCol = 0;
+
+	for (iRow = 1; iRow <= iNo1; iRow++)
+	{
+		for (iCol = 1; iCol <= iNo2; iCol++)
+		{
+			if (iRow > iCol)
+			{
+				printf("*\t");
+			}
+			else if (iRow == iCol)
+			{
+				printf("@\t");
+			}
+			else
+			{
+
+			printf("*\t");
+			}
+		}
+		printf("\n");
 	}
+	return 0;
 }
 
 int main()
 {
-	int iValue = 0;
+	int value1 = 0;
+	int value2 = 0;
 
-	printf("Enter Number:\n");
-	scanf_s("%d", &iValue);
+	printf("enter the number of rows and columns=");
+	scanf_s("%d%d" ,&value1, &value2);
 
-	Pattern(iValue);
+	Pattern(value1, value2);
 
 	return 0;
-
-
 }
